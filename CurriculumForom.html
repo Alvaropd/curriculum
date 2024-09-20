@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae de José Martínez</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="cv" id="cv">
+        <!-- Encabezado -->
+        <div class="header">
+            <img src="foto.jpeg" alt="Foto">
+            <h1><input type="text" id="name" name="name" placeholder="Nombre Apellido"></h1>
+            <p><input type="text" id="position" name="position" placeholder="Puesto"></p>
+        </div>
+
+        <div class="content">
+            <div class="left-column">
+                <!-- Información de contacto -->
+                <div class="section-title"><b>CONTACTO</b></div>
+                <div class="info">
+                    <p>📞 <input type="tel" id="phone" name="phone" placeholder="999 999 999"></p>
+                    <p>✉️ <input type="email" id="email" name="email" placeholder="nombre.apellido@gmail.com"></p>
+                    <p>📍 <input type="text" id="location" name="location" placeholder="Ciudad"></p>
+                    <p>🌐 <input type="url" id="linkedin" name="linkedin" placeholder="linkedin.com/nombre-apellido"></p>
+                </div>
+
+                <div class="section-title"><b>IDIOMAS</b></div>
+                <ul id="languages-list" class="list">
+                    <li class="list-item">
+                        <input type="text" name="language[]" placeholder="Idioma (e.g., Inglés)">
+                        <input type="text" name="proficiency[]" placeholder="Nivel (e.g., Nativo)">
+                    </li>
+                    <li class="list-item">
+                        <input type="text" name="language[]" placeholder="Idioma (e.g., Español)">
+                        <input type="text" name="proficiency[]" placeholder="Nivel (e.g., Bilingüe)">
+                    </li>
+                </ul>
+
+                <div class="section-title"><b>APTITUDES</b></div>
+                <ul id="aptitudes-list" class="list">
+                    <li class="list-item">
+                        <input type="text" name="aptitude[]" placeholder="Aptitud (e.g., Trabajo en equipo)">
+                    </li>
+                    <li class="list-item">
+                        <input type="text" name="aptitude[]" placeholder="Aptitud (e.g., Inteligencia emocional)">
+                    </li>
+                </ul>
+
+                <div class="section-title"><b>HABILIDADES</b></div>
+                <ul id="skills-list" class="list">
+                    <li class="list-item">
+                        <input type="text" name="skill[]" placeholder="Habilidad (e.g., Acondicionamiento físico)">
+                    </li>
+                    <li class="list-item">
+                        <input type="text" name="skill[]" placeholder="Habilidad (e.g., Tenis)">
+                    </li>
+                </ul>
+                
+                <div class="section-title"><b>INTERESES</b></div>
+                <ul id="interests-list" class="list">
+                    <li class="list-item">
+                        <input type="text" name="interest[]" placeholder="Interés (e.g., Paseos ecológicos grupales)">
+                    </li>
+                    <li class="list-item">
+                        <input type="text" name="interest[]" placeholder="Interés (e.g., Lectura grupal en inglés)">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right-column">
+                <!-- Perfil -->
+                <div class="section-title"><b>Perfil</b></div>
+                <textarea id="profile" name="profile" placeholder="Escribe tu perfil aquí..."></textarea>
+
+                <!-- Experiencia Laboral -->
+                <div class="section-title"><b>Experiencia Laboral</b></div>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="job-title"><input type="text" id="job_title_1" name="job_title_1" placeholder="Ingrese Trabajo"></div>
+                        <div class="date">
+                            <input type="text" id="location_1" name="location_1" placeholder="País, ciudad"> 
+                            <span>| Desde <input type="date" id="start_date_1" name="start_date_1"> hasta <input type="date" id="end_date_1" name="end_date_1"></span>
+                        </div>
+                        <textarea id="job_description_1" name="job_description_1" placeholder="Descripción del trabajo"></textarea>
+                    </li>
+
+                    <li class="list-item">
+                        <div class="job-title"><input type="text" id="job_title_2" name="job_title_2" placeholder="Ingrese Trabajo"></div>
+                        <div class="date">
+                            <input type="text" id="location_2" name="location_2" placeholder="País, ciudad"> 
+                            <span>| Desde <input type="date" id="start_date_2" name="start_date_2"> hasta <input type="date" id="end_date_2" name="end_date_2"></span>
+                        </div>
+                        <textarea id="job_description_2" name="job_description_2" placeholder="Descripción del trabajo"></textarea>
+                    </li>
+
+                    <li class="list-item">
+                        <div class="job-title"><input type="text" id="job_title_3" name="job_title_3" placeholder="Ingrese Trabajo"></div>
+                        <div class="date">
+                            <input type="text" id="location_3" name="location_3" placeholder="País, ciudad"> 
+                            <span>| Desde <input type="date" id="start_date_3" name="start_date_2"> hasta <input type="date" id="end_date_3" name="end_date_3"></span>
+                        </div>
+                        <textarea id="job_description_3" name="job_description_3" placeholder="Descripción del trabajo"></textarea>
+                    </li>
+
+                </ul>
+                <!--Formacion-->
+                <div class="section-title"><b>Formación</b></div>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="education-title"><input type="text" id="degree_1" name="degree_1" placeholder="Grado de Formación"></div>
+                        <div class="date">
+                            <input type="text" id="school_1" name="school_1" placeholder="Institución, Ciudad"> 
+                            | Desde <input type="date" id="edu_start_date_1" name="edu_start_date_1"> hasta <input type="date" id="edu_end_date_1" name="edu_end_date_1">
+                        </div>
+                    </li>
+
+                    <li class="list-item"></li>
+                        <div class="education-title"><input type="text" id="degree_2" name="degree_2" placeholder="Grado de Formación"></div>
+                        <div class="date">
+                            <input type="text" id="school_2" name="school_2" placeholder="Institución, Ciudad"> 
+                            | Desde <input type="date" id="edu_start_date_2" name="edu_start_date_2"> hasta <input type="date" id="edu_end_date_2" name="edu_end_date_2">
+                        </div>
+                    </li>
+
+                    <li class="list-item"></li>
+                        <div class="education-title"><input type="text" id="degree_3" name="degree_3" placeholder="Grado de Formación"></div>
+                        <div class="date">
+                            <input type="text" id="school_3" name="school_3" placeholder="Institución, Ciudad"> 
+                            | Desde <input type="date" id="edu_start_date_3" name="edu_start_date_3"> hasta <input type="date" id="edu_end_date_3" name="edu_end_date_3">
+                        </div>
+                    </li>
+                    
+                </ul>
+
+
+        <!-- Botón de Envío -->
+        <div style="text-align: center; margin-top: 20px;">
+            <button type="button" class="submit-btn" onclick="generateStaticCV()">Guardar Datos</button>
+        </div>
+    </div>
+
+    <script>
+        function generateStaticCV() {
+            // Recoge los valores ingresados
+            const name = document.getElementById('name').value;
+            const position = document.getElementById('position').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const location = document.getElementById('location').value;
+            const linkedin = document.getElementById('linkedin').value;
+            const profile = document.getElementById('profile').value;
+            const jobTitle1 = document.getElementById('job_title_1').value;
+            const jobLocation1 = document.getElementById('location_1').value;
+            const startDate1 = document.getElementById('start_date_1').value;
+            const endDate1 = document.getElementById('end_date_1').value;
+
+            const jobDescription1 = document.getElementById('job_description_1').value;
+            const jobDescription2 = document.getElementById('job_description_2').value;
+            const jobDescription3 = document.getElementById('job_description_3').value;
+
+            const degree1 = document.getElementById('degree_1').value;
+            const degree2 = document.getElementById('degree_2').value;
+            const degree3 = document.getElementById('degree_3').value;
+
+            const school1 = document.getElementById('school_1').value;
+            const school2 = document.getElementById('school_2').value;
+            const school3 = document.getElementById('school_3').value;
+
+            const eduStartDate1 = document.getElementById('edu_start_date_1').value;
+            const eduStartDate2 = document.getElementById('edu_start_date_2').value;
+            const eduStartDate3 = document.getElementById('edu_start_date_3').value;
+
+            const eduEndDate1 = document.getElementById('edu_end_date_1').value;
+            const eduEndDate2 = document.getElementById('edu_end_date_2').value;
+            const eduEndDate3 = document.getElementById('edu_end_date_3').value;
+
+            const skills = document.getElementById('skills').value;
+
+            const languages = document.querySelectorAll('input[name="language[]"]');
+            const proficiencies = document.querySelectorAll('input[name="proficiency[]"]');
+            let languagesHtml = '';
+            for (let i = 0; i < languages.length; i++) {
+                languagesHtml += `<p>${languages[i].value}: ${proficiencies[i].value}</p>`;
+            }
+
+            const aptitudes = document.querySelectorAll('input[name="aptitude[]"]');
+            let aptitudesHtml = '';
+            for (let i = 0; i < aptitudes.length; i++) {
+                aptitudesHtml += `<p>${aptitudes[i].value}</p>`;
+            }
+            const skills2 = document.querySelectorAll('input[name="skill[]"]');
+            let skillsHtml = '';
+            for (let i = 0; i < skills.length; i++) {
+                skillsHtml += `<p>${skills[i].value}</p>`;
+             }
+
+             const interests = document.querySelectorAll('input[name="interest[]"]');
+            let interestsHtml = '';
+            for (let i = 0; i < interests.length; i++) {
+                interestsHtml += `<p>${interests[i].value}</p>`;
+             }
+
+
+            document.getElementById('cv').innerHTML = `
+                <div class="header">
+                    <img src="foto.jpeg" alt="Foto de José Martínez">
+                    <h1>${name}</h1>
+                    <p>${position}</p>
+                </div>
+                <div class="content">
+                    <div class="left-column">
+                        <div class="section-title"><b>CONTACTO</b></div>
+                        <div class="info">
+                            <p>📞 ${phone}</p>
+                            <p>✉️ ${email}</p>
+                            <p>📍 ${location}</p>
+                            <p>🌐 ${linkedin}</p>
+                        </div>
+
+                        <div class="section-title"><b>IDIOMAS</b></div>
+                        <div class="info">${languagesHtml}</div>
+
+                        <div class="section-title"><b>APTITUDES</b></div>
+                        <div class="info">${aptitudesHtml}</div>
+
+                        <div class="section-title"><b>HABILIDADES</b></div>
+                        <div class="info">${skillsHtml}</div>
+
+                        <div class="section-title"><b>INTERESES</b></div>
+                        <div class="info">${interestsHtml}</div>
+
+
+                    </div>
+                    <div class="right-column">
+                        <div class="section-title"><b>Perfil</b></div>
+                        <p>${profile}</p>
+
+                        <div class="section-title"><b>Experiencia Laboral</b></div>
+                        <ul class="list">
+                            <li class="list-item">
+                                <div class="job-title">${jobTitle1}</div>
+                                <div class="date">
+                                    ${jobLocation1} | Desde ${startDate1} hasta ${endDate1}
+                                </div>
+                                <p>${jobDescription1}</p>
+                            
+                        <div class="section-title"><b>Formación</b></div>
+                        <ul class="list">
+                            <li class="list-item">
+                                <div class="education-title">${degree1}</div>
+                                <div class="date">
+                                    ${school1} | Desde ${eduStartDate1} hasta ${eduEndDate1}
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="section-title"><b>Habilidades</b></div>
+                        <p>${skills}</p>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+.cv {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Encabezado */
+.header {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header img {
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.header h1 {
+    margin: 5px 0;
+    font-size: 28px;
+}
+.header p {
+    margin: 0;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Contenedor del perfil y la información de contacto */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Sección de información de contacto */
+.left-column {
+    width: 40%;
+    background-color: rgb(250, 242, 232);
+    padding: 20px;
+}
+.info {
+    font-size: 16px;
+    line-height: 1.8;
+}
+.info i {
+    margin-right: 10px;
+}
+
+/* Sección de perfil y experiencia */
+.right-column {
+    width: 50%;
+}
+.section-title {
+    font-size: 20px;
+    color: #524d4d;
+    border-bottom: 2px solid #666666;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.right-column p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilo de lista */
+.list {
+    list-style: none;
+    padding: 0;
+}
+.list-item {
+    margin-bottom: 10px;
+}
+.job-title {
+    font-weight: bold;
+}
+.date {
+    font-style: italic;
+}
+.date span{
+    color: rgb(209, 199, 199);
+}
+/* Añadir estilos para los campos de formulario */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.cv input::placeholder, .cv textarea::placeholder {
+    color: #888;
+}
